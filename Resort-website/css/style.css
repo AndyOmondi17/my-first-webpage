@@ -1,0 +1,71 @@
+#body{
+  background-color: blue;
+
+}
+.text{
+  color: white;
+}
+.babayga{
+  background-image: url("background-image.jpeg");
+}
+.Above-the-fold{
+  color: grey;
+
+}
+.Navigation-Bar{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+
+
+}
+.Below-the-fold{
+  background-color: #006400;
+
+}
+
+nav ul li{
+  list-style-type: none;
+  display :inline-block;
+}
+nav ul{
+  float:right;
+}
+nav ul li a{
+  color: white;
+  padding: 30px;
+}
+img{
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+#image1{
+  width: 200px;
+  height: auto;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+#image2{
+  float: right;
+}
+#image3{
+  float: center;
+}
+#above-the-fold{
+  height: 200px;
+
+}
+#below-the-fold{
+  height: 400px;
+}
+#footer{
+  height: 80px;
+
+}
+.float{
+  float: left;
+}
+.border{
+  border: 2px solid black;
+}

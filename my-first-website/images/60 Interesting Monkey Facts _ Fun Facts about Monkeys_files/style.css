@@ -1,0 +1,214 @@
+/* setup */
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  user-select: none; }
+
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+#banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border: solid 1px #000;
+  overflow: hidden;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #banner .bannerClick,
+  #banner .mobileClick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"); }
+
+/* Banner Styles */
+#banner {
+  color: #fff; }
+  #banner #logoComponent.highTouch_true {
+    left: 51px;
+    bottom: 10px; }
+  #banner #logoComponent.highTouch_false {
+    left: 14px;
+    bottom: 10px; }
+  #banner #logoComponent.ar, #banner #logoComponent.he {
+    left: 160px; }
+  #banner .keyartWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    #banner .keyartWrapper #bg,
+    #banner .keyartWrapper #bgDark {
+      position: absolute;
+      bottom: 0px;
+      left: -40px; }
+    #banner .keyartWrapper #professor,
+    #banner .keyartWrapper #professorDark {
+      position: absolute;
+      bottom: 0px;
+      left: 27px; }
+    #banner .keyartWrapper #money {
+      position: absolute;
+      bottom: 0px;
+      right: -41px; }
+    #banner .keyartWrapper #bank {
+      position: absolute;
+      bottom: -22px;
+      left: -10px; }
+    #banner .keyartWrapper .copyContainer {
+      width: 100%;
+      height: 75px;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+    #banner .keyartWrapper .gradient {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); }
+  #banner .trailerHit {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer; }
+  #banner #trailerPlayButton {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 10px;
+    background-color: #e11728;
+    border-radius: 12px;
+    cursor: pointer;
+    pointer-events: none; }
+    #banner #trailerPlayButton #polygon {
+      fill: white;
+      stroke-width: 0; }
+  #banner #mainCopyComponent {
+    position: absolute; }
+    #banner #mainCopyComponent.highTouch_true {
+      left: 0px;
+      right: 0px;
+      margin: 0 auto;
+      bottom: 45px;
+      width: 230px;
+      height: 32px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 13px; }
+      #banner #mainCopyComponent.highTouch_true span {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%; }
+    #banner #mainCopyComponent.highTouch_false {
+      left: 61px;
+      bottom: 36px;
+      width: 210px;
+      height: 36px;
+      font-size: 14px;
+      letter-spacing: -0.1px;
+      line-height: 14px; }
+    #banner #mainCopyComponent.pl {
+      bottom: 50px; }
+  #banner .ctaContainer {
+    position: absolute;
+    overflow: hidden; }
+    #banner .ctaContainer.highTouch_true {
+      left: 161px;
+      bottom: 10px;
+      width: 90px;
+      height: 25px; }
+    #banner .ctaContainer.highTouch_false {
+      left: 61px;
+      bottom: 14px;
+      width: 90px;
+      height: 25px; }
+    #banner .ctaContainer.ar, #banner .ctaContainer.he {
+      left: 51px; }
+    #banner .ctaContainer #ctaComponent .copy.fr {
+      padding: 9% 8% !important;
+      line-height: 22px !important; }
+    #banner .ctaContainer #ctaComponent .copy.ro {
+      padding: 9% 8% !important;
+      line-height: 22px !important; }
+  #banner #titleTreatment {
+    position: absolute;
+    left: 15px;
+    top: 91px;
+    width: 175px;
+    height: 76px; }
+    #banner #titleTreatment #logoSVG {
+      position: absolute;
+      width: 100%;
+      max-height: 100%;
+      top: 50%;
+      transform: translate(0%, -50%); }
+      #banner #titleTreatment #logoSVG g {
+        opacity: 0.9999; }
+  #banner .supercutOverlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0; }
+    #banner .supercutOverlay #supercutLogoComponent {
+      position: absolute;
+      bottom: 11px;
+      left: 15px; }
+    #banner .supercutOverlay #supercutCopyComponent {
+      position: absolute;
+      color: #fff;
+      width: 160px;
+      right: 14px;
+      bottom: 10px;
+      line-height: 15px;
+      text-align: right;
+      font-size: 13.5px; }
+  #banner #videoGradientWrapper {
+    position: absolute;
+    bottom: 410px;
+    left: 0px;
+    width: 100%;
+    height: 54px; }
+  #banner #trailerComponent {
+    position: absolute;
+    height: 168px;
+    width: 300px;
+    top: 0px;
+    border-bottom: 1px solid #e11728;
+    box-sizing: content-box; }
